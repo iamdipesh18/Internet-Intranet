@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submitted Information</title>
+    <link rel="stylesheet" href="lab1result.css">
+</head>
+<body>
+    <header>
+        <h1>Submitted Information</h1>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <td><strong>Name:</strong></td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td><strong>Roll Number:</strong></td>
+                    <td id="rollnumber"></td>
+                </tr>
+                <tr>
+                    <td><strong>Date of Birth:</strong></td>
+                    <td id="dob"></td>
+                </tr>
+                <tr>
+                    <td><strong>Mobile Number:</strong></td>
+                    <td id="mobile"></td>
+                </tr>
+                <tr>
+                    <td><strong>Faculty:</strong></td>
+                    <td id="faculty"></td>
+                </tr>
+                <tr>
+                    <td><strong>Hobby:</strong></td>
+                    <td id="hobby"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dipesh Dhungana. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Get data from the URL (query string)
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Display the form data in the table cells
+        document.getElementById("name").textContent = urlParams.get("name");
+        document.getElementById("rollnumber").textContent = urlParams.get("rollnumber");
+        document.getElementById("dob").textContent = urlParams.get("dob");
+        document.getElementById("mobile").textContent = urlParams.get("mobile");
+        document.getElementById("faculty").textContent = urlParams.get("faculty");
+        document.getElementById("hobby").textContent = urlParams.get("hobby");
+    </script>
+</body>
+</html>

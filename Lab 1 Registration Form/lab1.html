@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="lab1.css">
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <form action="lab1result.html" method="GET">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rollnumber">Roll Number:</label>
+                    <input type="text" id="rollnumber" name="rollnumber" placeholder="Enter roll number" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+                </div>
+                <div class="form-group">
+                    <label for="faculty">Faculty:</label>
+                    <input type="text" id="faculty" name="faculty" placeholder="Enter faculty name" required>
+                </div>
+                <div class="form-group">
+                    <label for="hobby">Hobby:</label>
+                    <input type="text" id="hobby" name="hobby" placeholder="Enter your hobby" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Dipesh Dhungana 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
